@@ -9,7 +9,7 @@ export default function GymTracker({ gymLogs, onGymUpdate }) {
   const [selectedDay, setSelectedDay] = useState(todayIdx);
   const [completedSets, setCompletedSets] = useState({});
   const [expanded, setExpanded] = useState(null);
-  const [notes, setNotes] = useState({});
+
 
   const workout = WORKOUT_PLAN[selectedDay];
   const logKey = `${new Date().toISOString().split('T')[0]}_${selectedDay}`;
